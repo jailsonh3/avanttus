@@ -15,11 +15,10 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '16'
-      
-    - name: 📂 Open Path Projet
-      run: cd ./fontend/
-      
+
     - name: 🔨 Build Project
+      with: 
+        local-dir: ./fontend/
       run: |
         npm install
         npm run build
