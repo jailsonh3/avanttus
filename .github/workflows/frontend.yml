@@ -17,9 +17,8 @@ jobs:
         node-version: '16'
 
     - name: 🔨 Build Project
-      run: ls -alt
-      run: cd fontend/
       run: |
+        ls -la && cd ./fontend/
         npm install
         npm run build
     
