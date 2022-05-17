@@ -18,7 +18,7 @@ jobs:
 
     - name: 🔨 Build Project
       run: |
-        ls -la && cd ./fontend/
+        ls -la && cd ./frontend/
         npm install
         npm run build
     
