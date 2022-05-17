@@ -1,5 +1,5 @@
 on: 
-  push: 
+  push:
     braches:
       - main
 name: 🚀 Deploy website on push
