@@ -16,9 +16,11 @@ jobs:
       with:
         node-version: '16'
       
+    - name: 📂 Open Path Projet
+      run: cd ./fontend/
+      
     - name: 🔨 Build Project
       run: |
-        cd ./fontend/
         npm install
         npm run build
     
