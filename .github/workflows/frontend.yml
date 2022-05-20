@@ -22,16 +22,16 @@ jobs:
         npm install
         npm run build
     
-     - name: 📂 Sync files
-       uses: SamKirkland/FTP-Deploy-Action@4.3.0
-       with:
-        server: ${{ secrets.FTP_URL }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
-        server-dir: public_html/
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          fileToExclude.txt
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_URL }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            fileToExclude.txt
