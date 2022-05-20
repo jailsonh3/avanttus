@@ -1,7 +1,7 @@
 function App() {
 
   return (
-    <h1>Avanttus! Testes deploy</h1>
+    <h1>Avanttus! Testes Workflow</h1>
   )
 }
 
